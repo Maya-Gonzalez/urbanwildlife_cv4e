@@ -1,0 +1,14 @@
+numpy
+pandas
+pillow
+matplotlib
+pypi-json
+tqdm
+sklearn
+torch
+torchvision
+pyyaml
+tensorboard
+IPython
+Python-Glob
+imgaug
