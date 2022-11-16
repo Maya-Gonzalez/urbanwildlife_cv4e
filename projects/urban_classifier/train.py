@@ -260,11 +260,6 @@ def main():
 
     # initialize data loader for validation set
     dl_val = create_dataloader(cfg, split='val')
-<<<<<<< HEAD
-    print(
-=======
->>>>>>> 981193dd452d3447b9b744c13c3921bf8a81a92e
-
     # initialize model
     model, current_epoch = load_model(cfg)
 
