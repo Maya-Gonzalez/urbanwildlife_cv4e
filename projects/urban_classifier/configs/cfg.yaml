@@ -8,7 +8,7 @@ device: cuda
 num_workers: 6
 
 # dataset parameters
-data_root: '/content/urbanwildlife_cv4e/'
+# data_root: '/content/urbanwildlife_cv4e/'
 data_root: '/home/mgonzalez3/data/'
 num_classes: 62 # change back to 52
 
