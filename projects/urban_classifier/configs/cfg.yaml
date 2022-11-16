@@ -9,10 +9,7 @@ num_workers: 6
 
 # dataset parameters
 data_root: '/content/urbanwildlife_cv4e/'
-<<<<<<< HEAD
 data_root: '/home/mgonzalez3/data/'
-=======
->>>>>>> 981193dd452d3447b9b744c13c3921bf8a81a92e
 num_classes: 62 # change back to 52
 
 # training hyperparameters
