@@ -40,7 +40,8 @@ class CTDataset(Dataset):
         data_dict = {}
         #dict categories
         ##the following will need to be transformed into a in script mapping dictionay when adding more classes for UWIN
-        cat_csv = pd.read_csv(os.path.join(self.data_root, 'categories.csv')) #this could go into the cfg file
+        # FIXME: change back to categories.local
+        cat_csv = pd.read_csv(os.path.join(self.data_root, 'categoriesLocal.csv')) #this could go into the cfg file
         species_idx = cat_csv['class'].to_list()
         species = cat_csv['description'].to_list()
         self.species_to_index_mapping = dict(zip(species, species_idx))
