@@ -8,8 +8,8 @@ device: cuda
 num_workers: 6
 
 # dataset parameters
-# data_root: '/content/urbanwildlife_cv4e/'
-data_root: '/urbanwildlife_cv4e/'
+data_root: '/content/urbanwildlife_cv4e/'
+# data_root: '/urbanwildlife_cv4e/data'
 num_classes: 62 # change back to 52
 
 # training hyperparameters
