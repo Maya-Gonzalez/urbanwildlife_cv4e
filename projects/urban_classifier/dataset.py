@@ -5,7 +5,8 @@
 import os
 import random
 from torch.utils.data import Dataset
-from torchvision.transforms import Compose, Resize, RandomRotation, RandomCrop, GaussianBlur, ToTensor, RandomApply, Normalize
+# from torchvision.transforms import Compose, Resize, RandomRotation, RandomCrop, GaussianBlur, ToTensor, RandomApply, Normalize
+from torchvision.transforms import Compose, Resize, RandomRotation, RandomCrop, ToTensor, RandomApply, Normalize
 from PIL import Image
 import pandas as pd
 
@@ -42,7 +43,6 @@ class CTDataset(Dataset):
         ##the following will need to be transformed into a in script mapping dictionay when adding more classes for UWIN
         # FIXME: change back to categories.local
         cat_csv = pd.read_csv(os.path.join(self.data_root, 'categories.csv')) #this could go into the cfg file
-        cat_csv = pd.read_csv(os.path.join('/home/mgonzalez3/urbanwildlife_cv4e_maya/projects/urban_classifier/', 'categories.csv'))
         species_idx = cat_csv['class'].to_list()
         species = cat_csv['description'].to_list()
         self.species_to_index_mapping = dict(zip(species, species_idx))
